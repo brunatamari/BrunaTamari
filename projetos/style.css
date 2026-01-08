@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #0b1d3a; /* Azul marinho */
+    color: #ffffff;
+    min-height: 100vh;
+}
+
+header {
+    text-align: center;
+    padding: 40px 20px;
+    background: linear-gradient(135deg, #0b1d3a, #132f5e);
+}
+
+header h1 {
+    font-size: 2.2rem;
+    font-weight: 600;
+}
+
+header p {
+    margin-top: 10px;
+    font-weight: 300;
+}
+
+main {
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 0 20px;
+    display: grid;
+    gap: 20px;
+}
+
+.card {
+    background-color: #132f5e;
+    border-radius: 12px;
+    padding: 25px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+}
+
+.card h2 {
+    margin-bottom: 15px;
+    color: #9ecbff;
+}
+
+.card ul {
+    list-style: none;
+}
+
+.card ul li {
+    padding: 5px 0;
+}
+
+.links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background-color: #0b1d3a;
+    color: #ffffff;
+    padding: 12px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background-color: #1e4fa3;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    font-size: 0.9rem;
+    opacity: 0.8;
+}
+
+/* Responsividade */
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 1.7rem;
+    }
+
+    .btn {
+        width: 100%;
+        justify-content: center;
+    }
+}
+/* Botões flutuantes */
+.contatos-flutuantes {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    z-index: 999;
+}
+
+.btn-float {
+    width: 55px;
+    height: 55px;
+    background-color: #132f5e;
+    color: #ffffff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.4rem;
+    box-shadow: 0 8px 15px rgba(0,0,0,0.4);
+    transition: 0.3s;
+    text-decoration: none;
+}
+
+.btn-float:hover {
+    transform: translateY(-4px);
+    background-color: #1e4fa3;
+}
+header img {
+    width: 140px;
+    height: 140px;
+    max-width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid #ffffff;
+}
+
+@media (max-width: 600px) {
+    header img {
+        width: 110px;
+        height: 110px;
+    }
+}
+header img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(158,203,255,0.6);
+    transition: all 0.5s ease;
+}
+.btn-float:hover {
+    transform: translateY(-5px) scale(1.05);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.45);
+}
